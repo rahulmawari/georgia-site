@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    color: #262626;
+}
+
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/*#282c34*/
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#footer {
+  padding: 10px;
+  background-color: #1a1a1a;
+  position: relative;
+  height: 100px;
+}
+
+#footer-links {
+  float: right;
+  position: relative;
+}
+
+#inst {
+  color: gray;
+  font-size: 75%;
+}
+
+#links {
+  color: #b3b3b3;
+  font-size: 85%;
+}
+
+#footer-logo {
+  float: left;
+  text-align: center;
+}
+
+.navbar {
+  font-size: .88em;
+}
+
+.navbar-nav .nav-link{
+  color: yellow;
+}
+
+.card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.people{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.sec-heading{
+  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.paper {
+  width: 90vw;
+  max-width: 90vw;
+}
+
+.widget {
+  background-color: #343a40;
+  border: 10px solid black;
+  padding: 30px;
+  margin: 5px;
+}
+
+.dropdown{
+  margin-left: 50px;
+}

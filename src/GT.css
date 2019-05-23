@@ -1,0 +1,185 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+ font-family: “Roboto Condensed”, “Helvetica Neue”,
+ “Helvetica”, “Arial”, sans-serif;
+ font-weight: 600;
+ letter-spacing: .035rem;
+ line-height: 1;
+ margin-bottom: .25rem;
+ color: var(--gt-md-gold);
+}
+h2, h2 a, .h2, .h2 a {
+ font-size: 2.12rem;
+}
+h3, h3 a, .h3, .h3 a {
+ font-size: 1.75rem;
+}
+h4, h4 a, .h4, .h4 a {
+ font-size: 1.5rem;
+}
+h5, h5 a, .h5, .h5 a {
+ font-size: 1.25rem;
+}
+h6, h6 a, .h6, .h6 a {
+ font-size: 1rem;
+}
+h1.abel, h2.abel, h3.abel, h4.abel, h5.abel, h6.abel,
+.h1.abel, .h2.abel, .h3.abel, .h4.abel, .h5.abel,
+.h6.abel {
+ font-family: ‘Abel’, sans-serif;
+}
+
+p {
+    font-family: “Roboto”, “Helvetica Neue”,
+   “Helvetica”, “Arial”, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--gt-blktxt);
+    margin-bottom: 1.3rem;
+   }
+
+   p.intro-text {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    font-weight: 300;
+   }
+
+   p.cutline-text {
+    font-size: .83rem;
+    line-height: 1.1rem;
+    margin-bottom: 1rem;
+   }
+
+   a {
+    color: var(--gt-linkblue);
+    text-decoration: underline;
+    font-weight: 400;
+   }
+   a:hover, a:visited:hover {
+    color: var(--gt-linkhov);
+   }
+   a:active {
+    color: var(--gt-blktxt);
+   }
+   a:visited {
+    color: var(--gt-linkvisited);
+   }
+
+   p a {
+    color: var(--gt-blktxt);
+    display: inline-block;
+    position: relative;
+    transition: background .3s ease;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: .18rem solid var(--gt-buzzgold);
+    line-height: 1;
+    padding: .125rem .125rem 0 .125rem;
+   }
+   p a:hover, p a:visited:hover {
+    background-color: var(--gt-buzzgold);
+   }
+   p a:visited, p a:link:visited {
+    border-bottom: .18rem solid var(--gt-mdgray);
+   }
+   p a:active {
+    background-color: var(--gt-buzzgold);
+   }
+   p a.external-link:before {
+    font-family: “Font Awesome 5 Free”;
+    font-size: .85rem;
+    font-weight: 900;
+    content: “\f35d”;
+    padding-right: .25rem;
+   }
+
+   ul, ol {
+    margin-bottom: 1rem;
+    list-style: none;
+    padding-left: 2.5rem;
+   }
+   ul li, ol li {
+    font-family: “Roboto”, “Helvetica Neue”,
+   “Helvetica”, “Arial”, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--gt-blktxt);
+    margin-bottom: .8rem;
+   }
+   ul li:before {
+    content: ‘\25FC’;
+    color: var(--gt-gold);
+    padding-right: .5rem;
+    height: 1rem;
+    position: relative;
+    bottom: .125rem;
+   }
+   ul ul, ol ol {
+    margin-top: .8rem;
+   }
+   ul ul li:before {
+    content: ‘\25C6’;
+   }
+   ol {
+    counter-reset: item;
+    list-style-type: none;
+   }
+   li:before {
+    content: counters(item, “ “)” “;
+    counter-increment: item;
+    color: var(--gt-drk-gold);
+    font-weight: 600;
+    padding-right: .125rem;
+   }
+   ol ol li:before {
+    content: counter(item,lower-alpha) “ “;
+    counter-increment: item;
+   }
+
+   .label {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: 400;
+    letter-spacing: .04rem;
+    margin-bottom: 0;
+    display: inline-block;
+    color: var(--gt-drk-gold);
+    font-family: “Abel”;
+   }
+
+   .btn {
+    padding: 0rem 1.25rem;
+    display: inline-block;
+    transition: background .2s ease-in-out;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-size: .8rem;
+    border: 0;
+    border-radius: 2px;
+    -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+   }
+   .btn.btn-primary {
+    background: var(--gt-gold);
+    color: var(--gt-blktxt);
+   }
+   .btn.btn-primary:hover {
+    background: var(--gt-lt-gold);
+   }
+   .btn.btn-secondary {
+    background: var(--gt-drkgray);
+   }
+   .btn.btn-secondary:hover {
+    background: var(--gt-mdgray);
+   }
+   .btn.btn-light {
+    background-color: var(--gt-pimile-light);
+    color: var(--gt-drk-gold);
+   }
+   .btn.btn-light:hover {
+    background-color: #FFF;
+   }
